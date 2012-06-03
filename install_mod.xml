@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[qTip2 Youtube previews addons 1.0.0]]></title>
+		<description lang="en"><![CDATA[add-ons that extend the functionality of qtip2 to other feature on the board if present through the use of the youtube mod.
+
+qtip2 image p[revies on mouse over, done thrugh a bbcode
+
+qtip2 topic preview styling (requires the topic preview mod be installed)
+
+qtip2 toptips. a method to create easily styled tip dialogues on text on mouse over through the use of custom bbcodes or can aslo be used to style exisitng phpbb3 info bubbles by using the class"toptp"
+
+toptip bbcodes
+
+[tip={SIMPLETEXT}]{TEXT}[/tip]
+
+<a class="toptip" style="color: red"  title="{SIMPLETEXT}">{TEXT}</a>
+
+[tiplink={URL}]{SIMPLETEXT}/{TEXT}[/tiplink]
+
+<a class="toptip" href="{URL}" style="color:blue"  title="{SIMPLETEXT}">{TEXT}</a>
+
+image previews bbcode
+
+[Qimage]{URL}[/Qimage]
+
+<a href="{URL}"><img class="qimages" src="{URL}" alt="" width="100"></a>
+
+
+To style other elements with toptip do like this. THis examples uses navigation links in the overall_header.html
+
+original link
+
+<!-- IF U_NEWSLETTER --><li class="icon-newsletter"><a href="{U_NEWSLETTER}" title="{L_NEWSLETTER_EXPLAIN}">{L_NEWSLETTERS}</a></li><!-- ENDIF -->
+
+link description styled using qtip 2 toptip addon by adding a  class="toptip" to the link.
+
+<!-- IF U_NEWSLETTER -->  <li class="icon-newsletter"><a class="toptip" href="{U_NEWSLETTER}" title="{L_NEWSLETTER_EXPLAIN}">{L_NEWSLETTERS}</a></li><!-- ENDIF -->
+
+ a very simple edit to any nav link.]]></description>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[www.digikool.co.uk]]></homepage>
+				<email><![CDATA[digikool@mail.com]]></email>
+			</author>
+		</author-group>
+		<mod-version>1.0.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<target-version>3.0.10</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2012-006-02</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[major release]]></change>
+				</changelog>
+			</entry>
+		</history>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/*.*" to="*.*"/>
+			<file from="root/styles/prosilver/template/*.*" to="styles/prosilver/template/*.*"/>
+		</copy>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/ypreview.js"></script>]]></find>
+				<action type="after-add"><![CDATA[<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/qimage.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/tpreview.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/toptip.js"></script>]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[add-ons that extend the functionality of qtip2 to other feature on the board if present through the use of the youtube mod.
+
+qtip2 image p[revies on mouse over, done thrugh a bbcode
+
+qtip2 topic preview styling (requires the topic preview mod be installed)
+
+qtip2 toptips. a method to create easily styled tip dialogues on text on mouse over through the use of custom bbcodes or can aslo be used to style exisitng phpbb3 info bubbles by using the class"toptp"
+
+toptip bbcodes
+
+[tip={SIMPLETEXT}]{TEXT}[/tip]
+
+<a class="toptip" style="color: red"  title="{SIMPLETEXT}">{TEXT}</a>
+
+[tiplink={URL}]{SIMPLETEXT}/{TEXT}[/tiplink]
+
+<a class="toptip" href="{URL}" style="color:blue"  title="{SIMPLETEXT}">{TEXT}</a>
+
+image previews bbcode
+
+[Qimage]{URL}[/Qimage]
+
+<a href="{URL}"><img class="qimages" src="{URL}" alt="" width="100"></a>]]></diy-instructions>
+	</action-group>
+</mod>
