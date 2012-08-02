@@ -17,8 +17,8 @@ $(document).ready(function() {
         }
       },
       position: {
-        my: "center",
-        at: "center",
+				at: 'top center',
+				my: 'center',
         viewport: $(window)
       },
       hide: {
