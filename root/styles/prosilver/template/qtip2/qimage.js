@@ -1,33 +1,33 @@
 // <![CDATA[
-$(document).ready(function() {
-  $('.qimages').each(function() {
-    var a = $(this).attr("src"),
-        b = a.replace("_m.jpg", ".jpg"),
-        c = $("<a />", {
-        href: $(this).parent().attr("href"),
-        target: "_parent"
-      }).append($("<img />", {
-        src: b
-      }));
-    $(this).qtip({
-      content: {
-        text: c,
-        title: {
-          text: $(this).attr("alt")
-        }
-      },
-      position: {
-				at: 'top center',
+$(document).ready(function()
+{
+	$('.qimage').each(function() {
+		var thumb = $(this).attr('src'), full, content;
+		full = thumb.replace('_m.jpg', '.jpg');
+		content = $('<a />', { 
+			href: $(this).parent().attr('href'),
+			target: '_parent'
+		})
+		.append( $('<img />', { src: full }) );
+		$(this).qtip({
+			content: {
+				text: content,
+				title: {
+					text: $(this).attr('alt')
+				}
+			},
+			position: {
 				my: 'center',
-        viewport: $(window)
-      },
-      hide: {
-        fixed: true
-      },
-      style: {
-        classes: "ui-tooltip-youtube ui-tooltip-flickr"
-      }
-    })
-  })
+				at: 'center',
+				viewport: $(window)
+			},
+			hide: {
+				fixed: true
+			},
+			style: {
+				classes: 'ui-tooltip-tipsy ui-tooltip-flickr'
+			}
+		});
+	});
 });
 // ]]>
