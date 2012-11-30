@@ -9,7 +9,7 @@ $(document).ready(function() {
       }
     },
     style: {
-      classes: "ui-tooltip-tipsy"
+      classes: "qtip-tipsy"
     }
   })
 });

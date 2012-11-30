@@ -25,7 +25,7 @@ $(document).ready(function()
 				fixed: true
 			},
 			style: {
-				classes: 'ui-tooltip-tipsy ui-tooltip-flickr'
+				classes: 'qtip-blue'
 			}
 		});
 	});
