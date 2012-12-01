@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[qTip2 Youtube previews addons 1.0.1]]></title>
+		<title lang="en"><![CDATA[qTip2 Youtube previews addons 1.0.2]]></title>
 		<description lang="en"><![CDATA[add-ons that extend the functionality of qtip2 to other feature on the board if present through the use of the youtube mod.
 
 qtip2 image p[revies on mouse over, done thrugh a bbcode
@@ -50,7 +50,7 @@ link description styled using qtip 2 toptip addon by adding a  class="toptip" to
 				<email><![CDATA[digikool@mail.com]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.1</mod-version>
+		<mod-version>1.0.2</mod-version>
 		<installation>
 			<level>easy</level>
 			<target-version>3.0.11</target-version>
@@ -68,6 +68,13 @@ link description styled using qtip 2 toptip addon by adding a  class="toptip" to
 				<rev-version>1.0.1</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[updated qimage.js to be more visually friendly]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-12-01</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed scripts to work with new updated qtip2 css]]></change>
 				</changelog>
 			</entry>
 		</history>
